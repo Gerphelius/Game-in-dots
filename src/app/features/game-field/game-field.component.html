@@ -1,0 +1,8 @@
+<p *ngIf='winner'>{{ winner }}</p>
+<div (click)='changeCellColor($event.target, colors.Green)' 
+      class='grid' appFieldResizing [colls]='numOfColls'>
+  <div class='grid__cell'
+        [id]='i'
+        #cell
+        *ngFor='let square of field, let i = index'></div>
+</div>

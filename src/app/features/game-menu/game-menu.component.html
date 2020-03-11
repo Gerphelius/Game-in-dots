@@ -1,0 +1,4 @@
+<button [disabled]='isGameStarted' (click)='startGame()'>
+  <span *ngIf='isFirstGame'>PLAY</span>
+  <span *ngIf='!isFirstGame'>PLAY AGAIN</span>
+</button>
